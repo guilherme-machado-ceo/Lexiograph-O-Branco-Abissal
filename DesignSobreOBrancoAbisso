@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lexiograph — Design sobre o Branco Abissal</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cardo:wght@700&family=Source+Sans+Pro&display=swap');
+
+    :root {
+      --carmim: #8b0000;
+      --ciano: #00f0ff;
+      --preto: #000000;
+      --cinza: #f4f4f4;
+      --branco: #ffffff;
+      --lava: #ff4500;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Source Sans Pro', sans-serif;
+      background-color: var(--branco);
+      color: var(--preto);
+      line-height: 1.7;
+    }
+
+    header {
+      text-align: center;
+      padding: 6rem 2rem 3rem;
+      background: var(--branco);
+    }
+
+    h1 {
+      font-family: 'Cardo', serif;
+      font-size: 3rem;
+      color: var(--carmim);
+    }
+
+    h2 {
+      font-family: 'Cardo', serif;
+      font-size: 2rem;
+      color: var(--lava);
+      margin-top: 3rem;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+
+    .manifesto blockquote {
+      font-style: italic;
+      color: var(--carmim);
+      border-left: 4px solid var(--lava);
+      padding-left: 1rem;
+      margin: 1.5rem 0;
+    }
+
+    footer {
+      background-color: var(--preto);
+      color: var(--cinza);
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: var(--ciano);
+      text-decoration: underline;
+    }
+
+    .cta {
+      position: fixed;
+      bottom: 1rem;
+      right: 1rem;
+      background: var(--lava);
+      color: white;
+      border: none;
+      padding: 0.8rem 1.2rem;
+      font-size: 1rem;
+      border-radius: 100px;
+      cursor: pointer;
+      box-shadow: 0 0 12px var(--lava);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 12px var(--lava); }
+      50% { box-shadow: 0 0 25px var(--ciano); }
+      100% { box-shadow: 0 0 12px var(--lava); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lexiograph</h1>
+    <p><strong>Design sobre o branco abissal</strong></p>
+  </header>
+
+  <section class="manifesto">
+    <h2>I. O Silêncio Antes do Signo</h2>
+    <p>Antes da cor, da linha ou da forma — há o <strong>branco abissal</strong>. Não o branco da ausência, mas o branco do potencial infinito. É neste silêncio que nasce o design Lexiograph.</p>
+
+    <h2>II. O “O” como Origem</h2>
+    <p>No centro da marca, um “O” carmim. Um vórtice. Um olho. Um ovo cósmico. Representa o início e o fim, o ciclo e o nada. O “O” é onde o design se curva, respira e explode.</p>
+
+    <h2>III. Tipografia como Tradição Viva</h2>
+    <p>A tipografia é <em>trovadorista</em>. Ela carrega o gesto da pena, o rigor do manuscrito e o corte do moderno. Na Lexiograph, ela fala com o passado, mas constrói o futuro.</p>
+
+    <h2>IV. O Abismo É Digital</h2>
+    <p>O branco da tela é o novo pergaminho. O abismo não é ausência — é código, estrutura, pixel. Design é grafar sobre esse abismo.</p>
+
+    <h2>V. Design Também É Cultura</h2>
+    <blockquote>“Design também é cultura.”</blockquote>
+    <p>Aqui, o design é semiótica, história da arte, linguagem. É grito e silêncio. É branding e poesia.</p>
+
+    <h2>VI. Estética Lexiograph</h2>
+    <p>Lexiograph é dark neon, medieval pixelado, UX com trovadorismo. É grid e glitch. É futuro ancestral.</p>
+
+    <h2>VII. Uma Linguagem de Propósito</h2>
+    <p>Lexiograph é linguagem. Não apenas visual — mas ontológica. Como na GuruDev, a linguagem de programação que ela mesmo criou.</p>
+
+    <h2>VIII. A Missão</h2>
+    <p>Criar identidades com alma. Traduzir propósito em forma e cor. Marcar presença no invisível.</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Lexiograph. Guilherme Gonçalves Machado – Founder & Creative Director</p>
+    <p><a href="https://www.behance.net/lexiograph" target="_blank">Behance</a> | <a href="mailto:lexiograph@gmail.com" target="_blank">lexiograph@gmail.com</a></p>
+  </footer>
+
+  <a href="https://wa.me/5511994555772" class="cta" target="_blank">Fale com a Lexiograph</a>
+</body>
+</html>
