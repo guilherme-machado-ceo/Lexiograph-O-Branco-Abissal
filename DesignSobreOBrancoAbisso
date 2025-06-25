@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lexiograph — Design sobre o Branco Abissal</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Cardo:wght@700&family=Source+Sans+Pro&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Cardo:wght@700&family=Orbitron:wght@600&family=Source+Sans+Pro&display=swap');
 
     :root {
       --carmim: #8b0000;
@@ -22,6 +22,7 @@
       background-color: var(--branco);
       color: var(--preto);
       line-height: 1.7;
+      overflow-x: hidden;
     }
 
     header {
@@ -31,9 +32,10 @@
     }
 
     h1 {
-      font-family: 'Cardo', serif;
-      font-size: 3rem;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3.5rem;
       color: var(--carmim);
+      animation: glow 2s ease-in-out infinite alternate;
     }
 
     h2 {
@@ -41,6 +43,7 @@
       font-size: 2rem;
       color: var(--lava);
       margin-top: 3rem;
+      animation: fadeIn 2s ease-in;
     }
 
     section {
@@ -87,6 +90,7 @@
       cursor: pointer;
       box-shadow: 0 0 12px var(--lava);
       animation: pulse 2s infinite;
+      z-index: 9999;
     }
 
     @keyframes pulse {
@@ -94,9 +98,50 @@
       50% { box-shadow: 0 0 25px var(--ciano); }
       100% { box-shadow: 0 0 12px var(--lava); }
     }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px var(--lava); }
+      to { text-shadow: 0 0 20px var(--ciano); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    canvas#particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      top: 0;
+      left: 0;
+    }
   </style>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </head>
 <body>
+  <canvas id="particles-js"></canvas>
+  <script>
+    particlesJS('particles-js', {
+      particles: {
+        number: { value: 80 },
+        color: { value: '#ff4500' },
+        shape: { type: 'circle' },
+        opacity: { value: 0.5 },
+        size: { value: 3 },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: '#00f0ff',
+          opacity: 0.4,
+          width: 1
+        },
+        move: { enable: true, speed: 2 }
+      }
+    });
+  </script>
+
   <header>
     <h1>Lexiograph</h1>
     <p><strong>Design sobre o branco abissal</strong></p>
